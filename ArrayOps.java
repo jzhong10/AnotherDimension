@@ -37,4 +37,9 @@ public class ArrayOps {
       }
       return x;
     }
+
+    public static int sum(int[][] arr) {
+      return sum(sumRows(arr));
+      //returns the sum of the sum of the rows which is the sum of all the values in the array
+    }
 }
