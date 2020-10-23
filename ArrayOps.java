@@ -54,4 +54,9 @@ public class ArrayOps {
        }
        return x;
      }
+
+     public static int[] sumCols(int[][] matrix) {
+       int[][] r_Matrix = col2row(matrix);
+       return sumRows(r_Matrix);
+     }
 }

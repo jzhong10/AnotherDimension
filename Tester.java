@@ -24,5 +24,9 @@ public class Tester {
 
         System.out.println(Arrays.deepToString(A));
         System.out.println(Arrays.deepToString(ArrayOps.col2row(A)));
+
+        System.out.println();
+
+        System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
     }
 }
