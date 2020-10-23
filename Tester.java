@@ -12,6 +12,11 @@ public class Tester {
                        {  7, -2,  2,  1 },
                        { -5, -2,  2, -9 }
                          };
+       int[][] B  =  {{ 9, -17, 8, 11 },
+                      { 11, -11, 22, -11 },
+                      { 1, 2, 3, 5 },
+                      { 154, -133, -5, -5}
+                        };
         System.out.println(Arrays.toString(ArrayOps.sumRows(a2)));
         System.out.println(Arrays.toString(ArrayOps.largestInRows(a2)));
         System.out.println(ArrayOps.sum(a2));
@@ -28,5 +33,7 @@ public class Tester {
         System.out.println();
 
         System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+        System.out.println(ArrayOps.isRowMagic(A));
+        System.out.println(ArrayOps.isRowMagic(B));
     }
 }
