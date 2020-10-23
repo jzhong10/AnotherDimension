@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester {
     public static void main(String[] args) {
         int[]a1 = {1, 2, 3, 4};
@@ -7,6 +8,6 @@ public class Tester {
         System.out.println();
 
         int[][] a2 = { {1, 2, 3, 4}, {1, 2, 3, 4}, {1, 2, 3}};
-        System.out.println(ArrayOps.sumRows(a2));
+        System.out.println(Arrays.toString(ArrayOps.sumRows(a2)));
     }
 }
