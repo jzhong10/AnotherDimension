@@ -42,4 +42,16 @@ public class ArrayOps {
       return sum(sumRows(arr));
       //returns the sum of the sum of the rows which is the sum of all the values in the array
     }
+
+    // since I'm lazy, I'm going to write a helper function that turns cols into rows
+    // so I can use all the functions that work for rows
+     public static int[][] col2row(int[][] matrix) {
+       int[][] x = new int[matrix[0].length][matrix.length];
+       for (int col = 0; col<matrix[0].length; col++) {
+         for (int row = 0; row<matrix.length; row++) {
+           x[col][row] = matrix[row][col];
+         }
+       }
+       return x;
+     }
 }
