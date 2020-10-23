@@ -68,4 +68,10 @@ public class ArrayOps {
        }
        return true;
      }
+
+     //doing isrowmagic, but for a matrix where the rows and columns are switched
+     public static boolean isColMagic(int[][] matrix) {
+       int[][] r_Matrix = col2row(matrix);
+       return isRowMagic(r_Matrix);
+     }
 }
