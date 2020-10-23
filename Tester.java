@@ -16,7 +16,7 @@ public class Tester {
        int[][] B  =  {{ 9, -17, 8, 11 },
                       { 11, -11, 22, -11 },
                       { 1, 2, 3, 5 },
-                      { 154, -133, -5, -5}
+                      { 154, -133, -16, 6}
                         };
       int[][] C  =  {{ 11, 2, 4, 6, 8 },
                      { 9, 18, 16, 14, 12},
@@ -61,5 +61,12 @@ public class Tester {
         System.out.println(ArrayOps.isColMagic(B));
         System.out.println(ArrayOps.isColMagic(C));
         System.out.println(ArrayOps.isColMagic(D));
+
+        System.out.println("F T T T");
+
+        System.out.println(ArrayOps.isLocationMagic(A, 0, 0));
+        System.out.println(ArrayOps.isLocationMagic(B, 3, 3));
+        System.out.println(ArrayOps.isLocationMagic(D, 0, 3));
+        System.out.println(ArrayOps.isLocationMagic(D, D.length-1, D[0].length-1));
     }
 }
