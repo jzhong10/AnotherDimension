@@ -7,7 +7,8 @@ public class Tester {
 
         System.out.println();
 
-        int[][] a2 = { {1, 2, 3, 4}, {1, 2, 3, 4}, {1, 2, 3}};
+        int[][] a2 = { {1, 2, 3, 4}, {4, 3, 2, 1}, {1, 2, 3}};
         System.out.println(Arrays.toString(ArrayOps.sumRows(a2)));
+        System.out.println(Arrays.toString(ArrayOps.largestInRows(a2)));
     }
 }
